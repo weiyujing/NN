@@ -1,3 +1,6 @@
+#基于TensorFlow，搭建一个RNN，教会神经网络进行二进制加法
+
+
 import tensorflow as tf
 import numpy as np
 

@@ -9,6 +9,10 @@ import csv
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import tushare as ts
+##用前四天得到的收盘价预测前四天加今天共五天的均值，知道均价反推知第五天的收盘价。
+ #X：把收盘价每4天分一组，[1,2,3,4],[2,3,4,5][3,4,5,6]....[96,97,98,99]
+#Y:[第12345天的均价，第23456天的均价，......第96 9798 99 100天的均价]
+
 
 # # （1）数据读取
 #df=ts.get_hist_data('600128')
